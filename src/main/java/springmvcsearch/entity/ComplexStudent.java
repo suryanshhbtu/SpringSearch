@@ -1,6 +1,7 @@
 package springmvcsearch.entity;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -9,7 +10,7 @@ public class ComplexStudent {
 	private Long id;
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dob;
-	private String lang;
+	private List<String> lang;
 	private String student;
 	@Override
 	public String toString() {
@@ -34,10 +35,10 @@ public class ComplexStudent {
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
-	public String getLang() {
+	public List<String> getLang() {
 		return lang;
 	}
-	public void setLang(String lang) {
+	public void setLang(List<String> lang) {
 		this.lang = lang;
 	}
 	public String getStudent() {
@@ -46,7 +47,7 @@ public class ComplexStudent {
 	public void setStudent(String student) {
 		this.student = student;
 	}
-	public ComplexStudent(String name, Long id, Date dob, String lang, String student) {
+	public ComplexStudent(String name, Long id, Date dob, List<String> lang, String student) {
 		super();
 		this.name = name;
 		this.id = id;
