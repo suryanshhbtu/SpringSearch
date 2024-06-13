@@ -12,10 +12,19 @@ public class ComplexStudent {
 	private Date dob;
 	private List<String> lang;
 	private String student;
+	private Address address;
+	
+	
 	@Override
 	public String toString() {
 		return "ComplexStudent [name=" + name + ", id=" + id + ", dob=" + dob + ", lang=" + lang + ", student="
-				+ student + "]";
+				+ student + ", address=" + address + "]";
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	public String getName() {
 		return name;
