@@ -1,10 +1,11 @@
 package springmvcsearch.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.view.RedirectView;
+
+import springmvcsearch.entity.ComplexStudent;
 
 @Controller
 public class ComplexController {
@@ -15,9 +16,9 @@ public class ComplexController {
 		return "complex";
 	}
 	@RequestMapping(path="/processComplexForm", method = RequestMethod.POST)
-	public String processComplexForm(@RequestParam("name")String name, @RequestParam("id")Long id, @RequestParam("dob")String dob, @RequestParam("lang")String lang, @RequestParam("gender")String gender, @RequestParam("student")String student) {
+	public String processComplexForm(@ModelAttribute ComplexStudent complex) {
 		System.out.println("Complex Page Processed");
-		System.out.println(name+" "+id+" "+dob+" "+lang+" "+gender+" "+student);
+		System.out.println(complex);
 		return "complex";
 	}
 	

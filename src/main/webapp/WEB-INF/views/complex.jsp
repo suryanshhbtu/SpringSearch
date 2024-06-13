@@ -28,7 +28,7 @@
                 <div class="form-group row">
                     <label for="dob" class="col-sm-2 col-form-label">Your DOB</label>
                     <div class="col-sm-10">
-                        <input type="date" class="form-control" id="dob" name="dob">
+                        <input type="string" class="form-control" id="dob" name="dob">
                     </div>
                 </div>
                 <div class="form-group row">
