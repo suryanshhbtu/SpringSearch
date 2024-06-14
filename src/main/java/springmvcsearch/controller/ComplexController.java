@@ -16,10 +16,12 @@ public class ComplexController {
 		return "complex";
 	}
 	@RequestMapping(path="/processComplexForm", method = RequestMethod.POST)
-	public String processComplexForm(@ModelAttribute ComplexStudent complex) {
-		System.out.println("Complex Page Processed");
+	public String processComplexForm(@ModelAttribute("cmplx") ComplexStudent complex) {
+		System.out.println("Complex Page Processed "
+				+ "____");
 		System.out.println(complex);
-		return "complex";
+		
+		return "success";
 	}
 	
 }
