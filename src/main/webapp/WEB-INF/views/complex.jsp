@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,12 @@
 </head>
 <body>
 	<div class="container p-4">
+		<div class="alert alert-danger" role="alert">
+			<form:errors path="cmplx.*"></form:errors>
+			</div>
+			
+			
+			
 		<div class="card mx-auto mt-5 p-4" style="width: 80%">
 			<h1 class="text-center mb-4">Complex Form</h1>
 			<form action="processComplexForm" method="post">
