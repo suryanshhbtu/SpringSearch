@@ -22,7 +22,7 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 <link href="<c:url value="/resources/css/style.css"/>" />
-<script src="<c:url value="/resources/js/scripts.js"/>"></script>
+<script src="<c:url value="/resources/js/scripts.js"/>" />
 <title>Hello, world!</title>
 </head>
 <body>
